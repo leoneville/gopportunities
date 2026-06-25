@@ -6,6 +6,15 @@ GET http://localhost:8080/api/v1/openings
 
 POST http://localhost:8080/api/v1/opening
 Content-Type: application/json
+
+{
+   "role": "Go Backend Developer",
+   "company": "Headers",
+   "location": "Fortaleza-CE",
+   "remote": true,
+   "link": "headers.com/vaga-go",
+   "salary": 9500
+}
 ###
 
 PUT http://localhost:8080/api/v1/opening
