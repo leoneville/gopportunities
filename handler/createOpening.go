@@ -7,6 +7,18 @@ import (
 	"github.com/leoneville/gopportunities/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Summary Create opening
+// @Description Create a new job opening
+// @Tags Opening
+// @Accept json
+// @Produce json
+// @Param request body CreateOpeningRequest true "Request body"
+// @Success 200 {object} CreateOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [post]
 func CreateOpeningHandler(ctx *gin.Context) {
 	request := CreateOpeningRequest{}
 

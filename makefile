@@ -9,7 +9,7 @@ run:
 	@go run main.go
 run-with-docs:
 	@swag init
-	@go run main.go
+	@air
 build:
 	@go build -o $(APP_NAME) main.go
 test:
