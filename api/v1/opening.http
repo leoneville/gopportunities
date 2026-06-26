@@ -1,4 +1,4 @@
-GET http://localhost:8080/api/v1/opening
+GET http://localhost:8080/api/v1/opening/10
 ###
 
 GET http://localhost:8080/api/v1/openings
@@ -17,8 +17,12 @@ Content-Type: application/json
 }
 ###
 
-PUT http://localhost:8080/api/v1/opening
+PUT http://localhost:8080/api/v1/opening/4
 Content-Type: application/json
-###
 
-DELETE http://localhost:8080/api/v1/opening
+{
+   "role": "Senior Golang Engineer",
+   "salary": 22000
+}
+
+DELETE http://localhost:8080/api/v1/opening/3
