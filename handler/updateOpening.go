@@ -9,6 +9,20 @@ import (
 	"github.com/leoneville/gopportunities/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Summary Update opening
+// @Description Update a job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Param id path int true "Opening identification"
+// @Param request body UpdateOpeningRequest true "Request body"
+// @Success 200 {object} DeleteOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 404 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening/{id} [put]
 func UpdateOpeningHandler(ctx *gin.Context) {
 	idParam := ctx.Param("id")
 	id, err := strconv.Atoi(idParam)
